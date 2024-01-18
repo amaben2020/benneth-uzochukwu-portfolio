@@ -21,7 +21,71 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       {/* <Spotlight /> */}
-      <section className={styles.mask} ref={maskRef}></section>
+      <section className={styles.mask} ref={maskRef}>
+        <div className="max-w-5xl mx-auto">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sint
+          placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
+          temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum id
+          quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Qui sint placeat, dolorem quaerat laudantium, nulla corrupti velit nam
+          optio temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum
+          id quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Qui sint placeat, dolorem quaerat laudantium, nulla corrupti
+          velit nam optio temporibus magnam ipsa facilis ipsum, natus
+          voluptatibus dolorum id quia. Eum! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Qui sint placeat, dolorem quaerat
+          laudantium, nulla corrupti velit nam optio temporibus magnam ipsa
+          facilis ipsum, natus voluptatibus dolorum id quia. Eum! Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Qui sint placeat,
+          dolorem quaerat laudantium, nulla corrupti velit nam optio temporibus
+          magnam ipsa facilis ipsum, natus voluptatibus dolorum id quia. Eum!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sint
+          placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
+          temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum id
+          quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Qui sint placeat, dolorem quaerat laudantium, nulla corrupti velit nam
+          optio temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum
+          id quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Qui sint placeat, dolorem quaerat laudantium, nulla corrupti
+          velit nam optio temporibus magnam ipsa facilis ipsum, natus
+          voluptatibus dolorum id quia. Eum! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Qui sint placeat, dolorem quaerat
+          laudantium, nulla corrupti velit nam optio temporibus magnam ipsa
+          facilis ipsum, natus voluptatibus dolorum id quia. Eum! Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Qui sint placeat,
+          dolorem quaerat laudantium, nulla corrupti velit nam optio temporibus
+          magnam ipsa facilis ipsum, natus voluptatibus dolorum id quia. Eum!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sint
+          placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
+          temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum id
+          quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Qui sint placeat, dolorem quaerat laudantium, nulla corrupti velit nam
+          optio temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum
+          id quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Qui sint placeat, dolorem quaerat laudantium, nulla corrupti
+          velit nam optio temporibus magnam ipsa facilis ipsum, natus
+          voluptatibus dolorum id quia. Eum! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Qui sint placeat, dolorem quaerat
+          laudantium, nulla corrupti velit nam optio temporibus magnam ipsa
+          facilis ipsum, natus voluptatibus dolorum id quia. Eum! Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Qui sint placeat,
+          dolorem quaerat laudantium, nulla corrupti velit nam optio temporibus
+          magnam ipsa facilis ipsum, natus voluptatibus dolorum id quia. Eum!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sint
+          placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
+          temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum id
+          quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Qui sint placeat, dolorem quaerat laudantium, nulla corrupti velit nam
+          optio temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum
+          id quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Qui sint placeat, dolorem quaerat laudantium, nulla corrupti
+          velit nam optio temporibus magnam ipsa facilis ipsum, natus
+          voluptatibus dolorum id quia. Eum! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Qui sint placeat, dolorem quaerat
+          laudantium, nulla corrupti velit nam optio temporibus magnam ipsa
+          facilis ipsum, natus voluptatibus dolorum id quia. Eum!
+        </div>
+      </section>
     </main>
   );
 }
