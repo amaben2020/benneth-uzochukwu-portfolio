@@ -1,0 +1,15 @@
+.mask {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, 0.9);
+  mask: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    transparent 40px,
+    black 150px
+  );
+  -webkit-mask: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    transparent 40px,
+    black 150px
+  );
+}
