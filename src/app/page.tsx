@@ -1,6 +1,8 @@
 "use client";
-import Card from "@/components/elements/card";
+import HoverableCard from "@/components/elements/cards/hoverable";
+import Card from "@/components/elements/cards/simple";
 import { useEffect, useRef } from "react";
+import cartstand from "./../../public/cartstand.png";
 import styles from "./styles.module.css";
 export default function Home() {
   const maskRef = useRef<HTMLDivElement | null>(null);
@@ -36,67 +38,15 @@ export default function Home() {
       <section className={styles.mask} ref={maskRef}>
         <div className="max-w-7xl mx-auto">
           <Card />
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sint
-          placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
-          temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum id
-          quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Qui sint placeat, dolorem quaerat laudantium, nulla corrupti velit nam
-          optio temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum
-          id quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Qui sint placeat, dolorem quaerat laudantium, nulla corrupti
-          velit nam optio temporibus magnam ipsa facilis ipsum, natus
-          voluptatibus dolorum id quia. Eum! Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Qui sint placeat, dolorem quaerat
-          laudantium, nulla corrupti velit nam optio temporibus magnam ipsa
-          facilis ipsum, natus voluptatibus dolorum id quia. Eum! Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit. Qui sint placeat,
-          dolorem quaerat laudantium, nulla corrupti velit nam optio temporibus
-          magnam ipsa facilis ipsum, natus voluptatibus dolorum id quia. Eum!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sint
-          placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
-          temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum id
-          quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Qui sint placeat, dolorem quaerat laudantium, nulla corrupti velit nam
-          optio temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum
-          id quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Qui sint placeat, dolorem quaerat laudantium, nulla corrupti
-          velit nam optio temporibus magnam ipsa facilis ipsum, natus
-          voluptatibus dolorum id quia. Eum! Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Qui sint placeat, dolorem quaerat
-          laudantium, nulla corrupti velit nam optio temporibus magnam ipsa
-          facilis ipsum, natus voluptatibus dolorum id quia. Eum! Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit. Qui sint placeat,
-          dolorem quaerat laudantium, nulla corrupti velit nam optio temporibus
-          magnam ipsa facilis ipsum, natus voluptatibus dolorum id quia. Eum!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sint
-          placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
-          temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum id
-          quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Qui sint placeat, dolorem quaerat laudantium, nulla corrupti velit nam
-          optio temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum
-          id quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Qui sint placeat, dolorem quaerat laudantium, nulla corrupti
-          velit nam optio temporibus magnam ipsa facilis ipsum, natus
-          voluptatibus dolorum id quia. Eum! Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Qui sint placeat, dolorem quaerat
-          laudantium, nulla corrupti velit nam optio temporibus magnam ipsa
-          facilis ipsum, natus voluptatibus dolorum id quia. Eum! Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit. Qui sint placeat,
-          dolorem quaerat laudantium, nulla corrupti velit nam optio temporibus
-          magnam ipsa facilis ipsum, natus voluptatibus dolorum id quia. Eum!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sint
-          placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
-          temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum id
-          quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Qui sint placeat, dolorem quaerat laudantium, nulla corrupti velit nam
-          optio temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum
-          id quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Qui sint placeat, dolorem quaerat laudantium, nulla corrupti
-          velit nam optio temporibus magnam ipsa facilis ipsum, natus
-          voluptatibus dolorum id quia. Eum! Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Qui sint placeat, dolorem quaerat
-          laudantium, nulla corrupti velit nam optio temporibus magnam ipsa
-          facilis ipsum, natus voluptatibus dolorum id quia. Eum!
+          <HoverableCard
+            title="dolorem"
+            description="  placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
+            temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum id
+            quia. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Qui sint placeat, dolorem quaerat laudantium, nulla corrupti velit nam"
+            subtitle="dolorem quaerat la"
+            image={cartstand}
+          />
         </div>
       </section>
     </main>

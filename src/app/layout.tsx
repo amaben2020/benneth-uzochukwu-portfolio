@@ -43,20 +43,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${chelseaMarket.variable}`}>
-        <p className="font-primary">
-          {" "}
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus,
-          natus. Deleniti totam repudiandae quibusdam dolore tempora
-          consequuntur dicta architecto atque ab eum, ipsam repellendus quod
-          delectus quisquam ratione sequi ea.
-        </p>
-        <p className="font-secondary italic">
-          {" "}
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus,
-          natus. Deleniti totam repudiandae quibusdam dolore tempora
-          consequuntur dicta architecto atque ab eum, ipsam repellendus quod
-          delectus quisquam ratione sequi ea.
-        </p>
         {children}
       </body>
     </html>

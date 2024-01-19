@@ -1,0 +1,96 @@
+.card {
+  /* box model (from outside in) */
+  @apply rounded-md min-w-[308px] md:min-w-[450px] 2xl:min-w-0 w-0 2xl:w-[450px] h-[659px] pt-5 pb-7;
+
+  /* position and layout */
+  @apply relative;
+
+  /* background */
+  /* @apply bg-black-quaternary md:bg-black-secondary; */
+  @apply bg-black md:bg-black;
+}
+
+.top {
+  /* display and visibility */
+  @apply flex flex-col gap-y-5;
+  /* box model (from outside in) */
+  @apply pt-4 px-6;
+}
+
+.title {
+  /* typography */
+  @apply font-primary text-3xl md:text-4xl uppercase z-10 text-white;
+}
+
+.subtitle {
+  /* typography */
+  @apply text-lg lg:text-[22px] font-bold font-secondary text-left text-white;
+}
+
+.info {
+  /* position and layout */
+  @apply absolute top-[15%];
+}
+
+.image {
+  /* position and layout */
+  @apply relative;
+
+  /* clipping */
+  @apply overflow-hidden;
+
+  /* box model (from outside in) */
+  @apply rounded-r-md mt-20 mb-10 h-[180px] md:h-[233px] lg:h-auto max-w-[295px] sm:max-w-[310px] md:max-w-[423px];
+}
+
+.drape {
+  /* position and layout */
+  @apply absolute inset-0;
+  /* background */
+  @apply bg-gradient-to-r from-blue-500 to-purple-700 mix-blend-color;
+}
+
+.content {
+  /* typography */
+  @apply text-white;
+
+  /* box model (from outside in) */
+  @apply px-6 h-[87px] md:h-0 min-h-0 md:min-h-[161px];
+
+  /* position and layout */
+  @apply bottom-48 md:bottom-14 absolute;
+}
+
+.description {
+  /* typography */
+  @apply leading-[130%];
+}
+.notification {
+  /* position and layout */
+  @apply absolute -top-3 right-8;
+
+  /* box model */
+  @apply rounded-[100px]  py-[3px] px-[6px];
+
+  /* background */
+  @apply bg-white;
+
+  /* typography */
+  @apply text-xs font-bold text-black font-secondary;
+}
+.card-zoom {
+  /* clipping */
+  @apply overflow-visible;
+}
+.card-zoom-image {
+  /* animation */
+  @apply transition-all duration-500 ease-in-out transform;
+
+  /* background */
+  @apply bg-center bg-cover;
+}
+
+.card-zoom:hover .card-zoom-image {
+  /* animation */
+  @apply scale-125;
+}
