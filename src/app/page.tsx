@@ -1,9 +1,11 @@
 "use client";
 import HoverableCard from "@/components/elements/cards/hoverable";
-import Card from "@/components/elements/cards/simple";
+ 
+import Navbar from "@/components/elements/navbar";
 import { useEffect, useRef } from "react";
 import cartstand from "./../../public/cartstand.png";
 import styles from "./styles.module.css";
+import { Card } from "@/components/elements/cards/simple";
 export default function Home() {
   const maskRef = useRef<HTMLDivElement | null>(null);
 
@@ -33,10 +35,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex flex-col items-center justify-between">
       {/* <Spotlight /> */}
       <section className={styles.mask} ref={maskRef}>
         <div className="max-w-7xl mx-auto">
+          <Navbar />
           <Card />
           <HoverableCard
             title="dolorem"

@@ -1,3 +1,4 @@
+import Navbar from "@/components/elements/navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
@@ -42,7 +43,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${chelseaMarket.variable}`}>
+      <body className={`${roboto.variable} ${chelseaMarket.variable}`} >
+       
         {children}
       </body>
     </html>

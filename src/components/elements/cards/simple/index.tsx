@@ -1,6 +1,7 @@
 import clsx from "clsx";
+
 import styles from "./styles.module.css";
-const Card = () => {
+export const Card = () => {
   return (
     <div
       className={clsx(
@@ -24,5 +25,3 @@ const Card = () => {
     </div>
   );
 };
-
-export default Card;
