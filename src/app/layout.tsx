@@ -1,9 +1,8 @@
-import Navbar from "@/components/elements/navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import { AnimatePresence } from "framer-motion";
+import Transition from "./transition";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -45,9 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${chelseaMarket.variable}`}>
-        <AnimatePresence mode="wait" initial={false}>
-          {children}
-        </AnimatePresence>
+        <main>{children}</main>
       </body>
     </html>
   );

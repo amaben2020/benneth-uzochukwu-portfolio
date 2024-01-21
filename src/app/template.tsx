@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
-const Transition = ({ children }: { children: ReactNode }) => {
+const Template = ({ children }: { children: ReactNode }) => {
   return (
     <motion.div
       initial={{ y: 20, opacity: 0 }}
@@ -15,4 +15,4 @@ const Transition = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export default Transition;
+export default Template;
