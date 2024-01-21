@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { AnimatePresence } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -43,9 +44,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${chelseaMarket.variable}`} >
-       
-        {children}
+      <body className={`${roboto.variable} ${chelseaMarket.variable}`}>
+        <AnimatePresence mode="wait" initial={false}>
+          {children}
+        </AnimatePresence>
       </body>
     </html>
   );
