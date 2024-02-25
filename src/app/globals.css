@@ -11,18 +11,20 @@
 body {
   margin: 0;
   height: 100vh;
-  /* background-image: url(https://since1979.dev/wp-content/uploads/2022/01/todd-quackenbush-x5SRhkFajrA-unsplash.jpg); */
   background-position: center center;
   background-size: cover;
   transition: all 0.2s ease-in-out;
-  /* padding: 40px; */
-  /* background-color: hsla(0, 0%, 0%, 0.9); */
 }
 
 @layer base {
   h1 {
-    /* @apply font-extrabold; */
     font-weight: 700;
     font-size: 40px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 28px;
+    }
   }
 }

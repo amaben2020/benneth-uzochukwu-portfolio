@@ -1,11 +1,9 @@
 "use client";
-import HoverableCard from "@/components/elements/cards/hoverable";
 
 import { ImageCard } from "@/components/elements/cards/image";
 import { Card } from "@/components/elements/cards/simple";
 import Navbar from "@/components/elements/navbar";
 import { useEffect, useRef } from "react";
-import cartstand from "./../../public/cartstand.png";
 import styles from "./styles.module.css";
 export default function Home() {
   const maskRef = useRef<HTMLDivElement | null>(null);
@@ -39,10 +37,10 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between">
       {/* <Spotlight /> */}
       <section className={styles.mask} ref={maskRef}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-full md:max-w-6xl mx-auto">
           <Navbar />
 
-          <div className="grid grid-cols-5 gap-x-3">
+          <div className="grid grid-cols-5 gap-3 justify-between align-middle mt-10">
             <div className="col-span-5 md:col-span-3">
               <Card />
             </div>
@@ -51,7 +49,7 @@ export default function Home() {
             </div>
           </div>
 
-          <HoverableCard
+          {/* <HoverableCard
             title="dolorem"
             description="  placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
             temporibus magnam ipsa facilis ipsum, natus voluptatibus dolorum id
@@ -59,7 +57,7 @@ export default function Home() {
             Qui sint placeat, dolorem quaerat laudantium, nulla corrupti velit nam"
             subtitle="dolorem quaerat la"
             image={cartstand}
-          />
+          /> */}
         </div>
       </section>
     </main>

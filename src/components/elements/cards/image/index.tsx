@@ -4,10 +4,10 @@ export const ImageCard = () => {
   return (
     <Image
       src={profile}
-      className="rounded-lg hover:scale-105 transition-all duration-300 z-20 hover:cursor-not-allowed"
+      className="rounded-lg hover:scale-105 transition-all duration-300 z-20 hover:cursor-not-allowed w-full"
       alt=""
-      width={360}
-      height={365}
+      width={300}
+      height={200}
     />
   );
 };

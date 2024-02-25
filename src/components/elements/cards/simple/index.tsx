@@ -23,17 +23,23 @@ export const Card = () => {
         stakeholders to create magic. 🚀💻🎨
       </h4>
 
-      <div className="flex justify-between">
-        <button className="rounded-3xl mt-5 px-5 py-2 min-w-[100px] border hover:bg-white hover:font-bold hover:text-black hover:border-blue-600">
+      <div className="flex flex-col items-center md:flex-row justify-between gap-6">
+        <Link
+          href="/cv.pdf"
+          // download="cv"
+          className="rounded-3xl mt-5 px-5 py-2 border-2 hover:bg-white  font-bold hover:text-black hover:border-black"
+          target="_blank"
+        >
           Download Resume
-        </button>
+        </Link>
 
-        <div className="flex flex-wrap">
+        <div className="flex md:flex-wrap">
           {socialLinks.map((elem) => (
             <Link
               href={elem.link}
               key={elem.id}
               className="hover:transition-all hover:scale-105 duration-300"
+              target="_blank"
             >
               {elem.image}
             </Link>
