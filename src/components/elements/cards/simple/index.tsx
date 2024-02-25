@@ -6,7 +6,7 @@ export const Card = () => {
     <div
       className={clsx(
         styles.card,
-        "rounded-lg p-10 max-w-2xl backdrop-blur-sm",
+        "rounded-lg p-10 max-w-2xl backdrop-blur-sm hover:bg-black cursor-pointer transition-all duration-300 hover:text-white hover:border-white hover:border-2",
       )}
     >
       <h3>hi 👋🏾, I&rsquo;m Benneth Uzochukwu</h3>

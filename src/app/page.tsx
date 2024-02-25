@@ -1,11 +1,12 @@
 "use client";
 import HoverableCard from "@/components/elements/cards/hoverable";
- 
+
+import { ImageCard } from "@/components/elements/cards/image";
+import { Card } from "@/components/elements/cards/simple";
 import Navbar from "@/components/elements/navbar";
 import { useEffect, useRef } from "react";
 import cartstand from "./../../public/cartstand.png";
 import styles from "./styles.module.css";
-import { Card } from "@/components/elements/cards/simple";
 export default function Home() {
   const maskRef = useRef<HTMLDivElement | null>(null);
 
@@ -40,7 +41,16 @@ export default function Home() {
       <section className={styles.mask} ref={maskRef}>
         <div className="max-w-7xl mx-auto">
           <Navbar />
-          <Card />
+
+          <div className="grid grid-cols-5 gap-x-3">
+            <div className="col-span-5 md:col-span-3">
+              <Card />
+            </div>
+            <div className="col-span-5 md:col-span-2">
+              <ImageCard />
+            </div>
+          </div>
+
           <HoverableCard
             title="dolorem"
             description="  placeat, dolorem quaerat laudantium, nulla corrupti velit nam optio
