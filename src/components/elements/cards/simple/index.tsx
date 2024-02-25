@@ -1,5 +1,7 @@
 import clsx from "clsx";
 
+import { socialLinks } from "@/data/socialLinks";
+import Link from "next/link";
 import styles from "./styles.module.css";
 export const Card = () => {
   return (
@@ -21,7 +23,23 @@ export const Card = () => {
         stakeholders to create magic. 🚀💻🎨
       </h4>
 
-      <button className="rounded-full mt-5 p-3 border">Download Resume</button>
+      <div className="flex justify-between">
+        <button className="rounded-3xl mt-5 px-5 py-2 min-w-[100px] border hover:bg-white hover:font-bold hover:text-black hover:border-blue-600">
+          Download Resume
+        </button>
+
+        <div className="flex flex-wrap">
+          {socialLinks.map((elem) => (
+            <Link
+              href={elem.link}
+              key={elem.id}
+              className="hover:transition-all hover:scale-105 duration-300"
+            >
+              {elem.image}
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
